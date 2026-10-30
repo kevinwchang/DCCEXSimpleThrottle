@@ -1,0 +1,34 @@
+{
+  "build": {
+    "arduino": {
+      "board": "GENERIC_C071GBUX",
+      "variant_h": "variant_generic.h"
+    },
+    "core": "stm32",
+    "cpu": "cortex-m0plus",
+    "extra_flags": [
+      "-DSTM32C0 -DSTM32C071xx",
+      "-DPIN_SPI_MOSI=PB5",
+      "-DPIN_SPI_MISO=PB4",
+      "-DPIN_SPI_SCK=PB3"
+    ],
+    "f_cpu": "48000000L",
+    "framework_extra_flags": {
+      "arduino": "-D__CORTEX_SC=0"
+    },
+    "mcu": "stm32c071gbu6",
+    "product_line": "STM32C071xx",
+    "variant": "STM32C0xx/C071G(8-B)U"
+  },
+  "frameworks": [
+    "arduino"
+  ],
+  "name": "sc01a",
+  "upload": {
+    "maximum_ram_size": 24576,
+    "maximum_size": 131072,
+    "protocol": "dfu"
+  },
+  "url": "",
+  "vendor": ""
+}
