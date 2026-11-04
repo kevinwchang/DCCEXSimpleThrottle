@@ -20,6 +20,10 @@
     "product_line": "STM32C071xx",
     "variant": "STM32C0xx/C071G(8-B)U"
   },
+  "debug": {
+    "openocd_target": "stm32c0x",
+    "svd_path": "STM32C071.svd"
+  },
   "frameworks": [
     "arduino"
   ],
@@ -27,7 +31,12 @@
   "upload": {
     "maximum_ram_size": 24576,
     "maximum_size": 131072,
-    "protocol": "dfu"
+    "protocol": "dfu",
+    "protocols": [
+      "dfu",
+      "cmsis-dap",
+      "stlink"
+    ]
   },
   "url": "",
   "vendor": ""
